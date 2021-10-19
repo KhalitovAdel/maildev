@@ -20,6 +20,7 @@ module.exports = function (config) {
     // CLI
     config = program
       .version(version)
+      .allowUnknownOption(true)
       .option('-s, --smtp <port>', 'SMTP port to catch emails [1025]', '1025')
       .option('-w, --web <port>', 'Port to run the Web GUI [1080]', '1080')
       .option('--ip <ip address>', 'IP Address to bind SMTP service to', '0.0.0.0')
